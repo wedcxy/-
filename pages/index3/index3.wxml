@@ -1,0 +1,8 @@
+<!-- 登录部分 -->
+<view class="login">
+      <image src="../img/login.png" class="login-picture"></image>
+      <text class="login-text">登录</text>
+      <text class="login-slash">></text>
+</view>
+
+ 

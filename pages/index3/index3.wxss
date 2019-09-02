@@ -1,0 +1,24 @@
+.login
+{
+  width: 100%;
+  height: 160rpx;
+  background:#126ca0;
+  float: left;
+}
+.login-picture
+{
+  width: 120rpx;
+  height: 120rpx;
+  margin: 24rpx auto;
+}
+.login-text
+{
+  vertical-align: 56rpx;
+  font-size: 40rpx;
+}
+.login-slash
+{
+   float: right;
+   margin: 50rpx 20rpx 0rpx 0rpx;
+   font-size: 40rpx;
+}

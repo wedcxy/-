@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index3/index3",
+    "pages/index/index",
+    "pages/index2/index2",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#27a4ec",
+    "navigationBarTitleText": "创新小商场",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh":true
+  },
+  "tabBar": {
+    "color":"#a9b2b7",
+    "selectedColor":"#232527",
+    "borderStyle":"black",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "商场",
+      "iconPath": "pages/img/market.png",
+      "selectedIconPath": "pages/img/market.png"
+      },
+     {
+      "pagePath": "pages/index2/index2",
+      "text": "服务",
+      "iconPath": "pages/img/serve.png",
+      "selectedIconPath": "pages/img/serve.png"
+      },
+      {
+        "pagePath": "pages/index3/index3",
+        "text": "我的",
+        "iconPath": "pages/img/centre.png",
+        "selectedIconPath": "pages/img/centre.png"
+      }
+
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
