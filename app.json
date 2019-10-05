@@ -1,14 +1,23 @@
 {
   "pages": [
-    "pages/index3/index3",
     "pages/index/index",
     "pages/index2/index2",
-    "pages/logs/logs"
+    "pages/partTime/partTime",
+    "pages/task/task",
+    "pages/Runnerspage/Runners page",
+    "pages/register/register",
+    "pages/index3/index3",
+    "pages/template/template",
+    "pages/logs/logs",
+    "pages/issue/issue",
+    "pages/errand/errand",
+    "pages/particulars/particulars",
+    "pages/payment/payment"
   ],
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#27a4ec",
-    "navigationBarTitleText": "创新小商场",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#2470a0",
+    "navigationBarTitleText": "创新商城",
     "navigationBarTextStyle": "white",
     "enablePullDownRefresh":true
   },
@@ -37,5 +46,27 @@
 
     ]
   },
-  "sitemapLocation": "sitemap.json"
+  "permission":{
+      "scope.userLocation": {
+        "desc": "您的位置信息将用于寻找附近的检测点"
+      }
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-card": "vant-weapp/card",
+    "van-notice-bar": "vant-weapp/notice-bar",
+    "van-panel": "vant-weapp/panel",
+    "van-tab": "vant-weapp/tab",
+    "van-tabs": "vant-weapp/tabs",
+    "van-field": "vant-weapp/field",
+    "van-grid": "vant-weapp/grid",
+    "van-grid-item": "vant-weapp/grid-item",
+    "van-steps": "vant-weapp/steps",
+    "i-input": "vant-weapp/input",
+    "van-submit-bar": "vant-weapp/submit-bar",
+    "van-search": "vant-weapp/search",
+    "van-button": "vant-weapp/button",
+    "van-nav-bar": "vant-weapp/nav-bar",
+    "van-stepper": "vant-weapp/stepper"
+  }
 }

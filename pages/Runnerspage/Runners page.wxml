@@ -1,0 +1,19 @@
+<van-panel title="跑手名称:{{name}}"></van-panel>
+<van-tabs active="{{ active }}" bind:change="onChange">
+      <van-tab title="未完成">
+            <view wx:for="{{task}}">
+              <van-card class="van-vard" price="{{item.task_moneny}}"desc="手机号码:{{item.signer_mobile}}" title="任务：{{item.task_type}}" data-id="{{item.id}}"bindtap="clickTask"/>
+            </view>
+      </van-tab>
+      <van-tab title="完成">
+            <view wx:for="{{task2}}">
+                <van-card 
+                class="van-vard" 
+                price="{{item.task_moneny}}"
+                desc="手机号码:{{item.signer_mobile}}" 
+                title="任务：{{item.task_type}}"
+                data-id="{{item.id}}" 
+                bindtap="clickTask"/>
+          </view>
+    </van-tab>
+</van-tabs>

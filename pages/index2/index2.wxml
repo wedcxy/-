@@ -1,2 +1,33 @@
-<!--pages/index2/index2.wxml-->
-<text>你看看我有没有变化</text>
+<view id="box">
+      <!-- 跑腿服务 -->
+      <view class="box1">
+            
+                <image src="http://49.235.182.60/media/errand.png"></image>
+                <button type="primary" bindtap="skip1">跑腿服务</button>
+            
+      </view>
+
+      <!-- 校园兼职 -->
+      <view class="box2">
+            
+              <image src="http://49.235.182.60/media/Part-.png"></image>
+                 <button type="primary" bindtap="skip2">校园兼职</button>
+      </view>
+
+      <!-- 跑手注册 -->
+    <view class="box3">
+            
+                <image src="http://49.235.182.60/media/register.png"></image>
+                <button type="primary" bindtap="skip3">跑手注册</button> 
+            
+    </view>
+
+    <!-- 意见反馈 -->
+    <view class="box4">
+            
+                  <image src="http://49.235.182.60/media/ms.png"></image>
+                  <button type="primary" bindtap="skip4">意见反馈</button>
+           
+    </view>
+
+</view> 

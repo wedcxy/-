@@ -1,13 +1,63 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<view>
+   <van-notice-bar mode="closeable" text="~创新小商城开业啦~开业啦~开业啦~全场东西9.9折~ "/>
+    <image src="http://49.235.182.60/media/one.png"></image>
+    <van-grid>
+              <van-grid-item icon="http://49.235.182.60/media/Run.png" text="跑腿服务" bindtap="click1"/>
+              <van-grid-item icon="http://49.235.182.60/media/Part-.png" text="校园兼职"  bindtap="click2"/>
+              <van-grid-item icon="http://49.235.182.60/media/order-form.png" text="订单"  bindtap="click3"/>
+              <van-grid-item icon="http://49.235.182.60/media/me .png" text="意见反馈" bindtap="click4"/>
+  </van-grid>
+  <van-tabs animated>
+          <van-tab title="零食">     
+                   <scroll-view style="height:703.5px" scroll-y="true">
+                              <van-card 
+                              wx:for="{{snacks}}"
+                              wx:key="{{index}}"
+                              num="1" 
+                              price="{{item.goods_price}}"
+                              desc="描述信息"
+                              title="{{item.name}}" 
+                              thumb="{{item.goods_front_image}}"
+                              bindtap="commodity"
+                              data-name="{{item.name}}"
+                              data-goods_price="{{item.goods_price}}"
+                              data-goods_front_image="{{item.goods_front_image}}"
+                              data-id="{{item.id}}"/>
+                   </scroll-view> 
+          </van-tab>
+          <van-tab title="饮料">
+                  <scroll-view>
+                              <van-card 
+                              wx:for="{{beverages}}"
+                              wx:key="{{index}}"
+                              num="1" 
+                              price="{{item.goods_price}}"
+                              desc="描述信息"
+                              title="{{item.name}}" 
+                              thumb="{{item.goods_front_image}}"
+                              bindtap="commodity"
+                              data-name="{{item.name}}"
+                              data-goods_price="{{item.goods_price}}"
+                              data-goods_front_image="{{item.goods_front_image}}"
+                              data-id="{{item.id}}" />
+                   </scroll-view> 
+          </van-tab>
+          <van-tab title="水果">
+                 <scroll-view>
+                              <van-card 
+                              wx:for="{{fruits}}"
+                              wx:key="{{index}}"
+                              num="1" 
+                              price="{{item.goods_price}}"
+                              desc="描述信息"
+                              title="{{item.name}}" 
+                              thumb="{{item.goods_front_image}}"
+                              bindtap="commodity"
+                              data-name="{{item.name}}"
+                              data-goods_price="{{item.goods_price}}"
+                              data-goods_front_image="{{item.goods_front_image}}"
+                              data-id="{{item.id}}" />
+                   </scroll-view> 
+          </van-tab>
+  </van-tabs>
 </view>

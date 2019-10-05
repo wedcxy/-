@@ -1,0 +1,5 @@
+<view>
+      <image src="http://49.235.182.60/media/ZF.png"></image>
+      <text>备注：点击按钮进行保存图片，使用微信扫一扫进行支付，（可以直接扫一扫支付）</text>
+      <button type="primary" bindtap="clickzf">点击支付</button>
+</view>

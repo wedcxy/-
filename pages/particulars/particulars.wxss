@@ -1,0 +1,29 @@
+page
+{
+  background: #f0f3f6;
+}
+.commodity 
+{
+
+}
+.commodity image
+{ 
+  width: 80%;
+  height: 300px;
+  border: 3rpx solid #000;
+  margin:30rpx 10% 40rpx 10%;
+  border-radius: 40rpx;
+}
+.commodity van-stepper
+{
+  position: absolute;
+  bottom: 9px;
+  left: 22px;
+  z-index: 200;
+  background: #fff;
+  border: 2rpx solid #d9dcdd;
+}
+.commodity van-field
+{
+  border: 0.1rpx solid #fff;
+}

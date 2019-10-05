@@ -1,0 +1,131 @@
+
+
+<!-- 第二页跑手注册模板 -->
+<template name="register">
+            <form bindsubmit="menu">
+                <view class="table">
+                  <text class="login">注册界面</text>
+                  <view><text>名字：</text><input type="tetx" class="text2" name="name"></input></view>
+                  <view><text>手机：</text><input type="text" class="text2" name="phone"></input></view>
+                  <view><text>学号：</text> <input type="text" name="studentNumber"></input> </view>
+                  <button type="primary" form-type="submit">提交</button>
+                </view>
+        </form> 
+</template>
+
+<!-- 意见模块 -->
+<template name="opinion">
+          <form bindsubmit="opinion">
+                  <text class="text">意见反馈</text>
+                  <textarea class="texts"  placeholder="意见：" bindinput="textbox" name="texts"></textarea>
+                  <input class="enter-email" placeholder="邮箱：" bindinput="mailbox" name="opinion"></input>
+                  <button type="primary" class="tj" form-type="submit">提交</button>
+          </form> 
+</template>
+
+<!-- 修改地址页面模块 -->
+<template name="modification">
+        <form class="modification" bindsubmit="modification">
+                <view class="addbox2">
+                      <image src="http://49.235.182.60/media/address.png"></image>
+                      <text>地址：</text>
+                      <input type="text" name="address" value="{{site}}"></input>
+                </view>
+                <view class="addbox3">
+                      <image src="http://49.235.182.60/media/phone.png"></image>
+                      <text>手机号码：</text>
+                      <input type="text" name="phoneNumber"></input>
+                </view>
+                <view class="addbox4">
+                        <button type="primary" bindtap="address">获取位置</button>
+                        <button type="primary" form-type="submit">修改完成</button>
+                </view>
+        </form>
+</template>
+
+<!-- 联系客服模块 -->
+<template name="relation">
+        <form class="service" bindsubmit="submit" bindsubmit="service">
+             <textarea class="textar" placeholder="输入信息，将会有客服人员对您联系" name="text"></textarea>
+             <button form-type="submit" type="primary">提交</button>
+        </form>
+</template>
+
+<!-- 我的信息模块 -->
+<template name="my">
+          <view style="color:#b8b8b8;text-align: center;margin-top:80rpx">---- 没有信息哦！-----</view>
+</template>
+
+<!-- 订单模块 -->
+<template name="order">
+            <view class="orderForm">
+                  <view class="pack1" bindtap="pack1">
+                        <image src="http://49.235.182.60/media/order-form2.png"></image>
+                        <text>待处理</text>
+            </view>
+            <view class="pack2" bindtap="pack2">
+                  <image src="http://49.235.182.60/media/order-form3.png"></image>
+                  <text>全部订单</text>
+            </view>
+</view>
+      <view class="pack3" wx:if="{{pack1}}">
+                  <view wx:for="{{commodity1}}" wx:key="*this" class="formBox">
+                    <view class="van-cardbox">
+                          <van-card  class="van-card" num="{{item.quantity}}" price="{{item.goods_price}}" desc="{{item.name}}" title="商店：创新小商场" thumb="{{item.goods_front_image}}" tag="等待"/>
+                    </view>
+            </view>
+            <van-card
+             thumb="http://49.235.182.60/media/task.png"
+             wx:for="{{task1}}"
+             wx:key="{{index}}"
+             price="{{item.task_moneny}}"
+             desc="手机号码:{{item.signer_mobile}}" 
+             title="任务:{{item.task_type}}"/>
+        </view>
+        <view class="pack3" wx:if="{{pack2}}">
+               <view wx:for="{{commodity2}}" wx:key="*this" class="formBox">
+                    <view class="van-cardbox">
+                          <van-card  class="van-card" num="{{item.quantity}}" price="{{item.goods_price}}" desc="{{item.name}}" title="商店：创新小商场" thumb="{{item.goods_front_image}}"/>
+                    </view>
+            </view>
+            <van-card
+             thumb="http://49.235.182.60/media/task.png"
+             wx:for="{{task2}}"
+             wx:key="{{index}}"
+             price="{{item.task_moneny}}"
+             desc="手机号码:{{item.signer_mobile}}" 
+             title="任务:{{item.task_type}}"/>
+        </view>
+</template>
+
+<!-- 等待处理订单模板 -->
+<template name="await">
+            <view wx:for="{{commodity1}}" wx:key="*this" class="formBox">
+                    <view class="van-cardbox">
+                          <van-card  class="van-card" num="{{item.quantity}}" price="{{item.goods_price}}" desc="{{item.name}}" title="商店：创新小商场" thumb="{{item.goods_front_image}}" tag="等待"/>
+                    </view>
+            </view>
+            <van-card
+             thumb="http://49.235.182.60/media/task.png"
+             wx:for="{{task1}}"
+             wx:key="{{index}}"
+             price="{{item.task_moneny}}"
+             desc="手机号码:{{item.signer_mobile}}" 
+             title="任务:{{item.task_type}}"/>
+</template> 
+
+<!-- 全部订单模板              里面的数据需要更新                      -->
+<template name="all">
+            <view wx:for="{{commodity2}}" wx:key="*this" class="formBox">
+                    <view class="van-cardbox">
+                          <van-card  class="van-card" num="{{item.quantity}}" price="{{item.goods_price}}" desc="{{item.name}}" title="商店：创新小商场" thumb="{{item.goods_front_image}}"/>
+                    </view>
+            </view>
+            <van-card
+             thumb="http://49.235.182.60/media/task.png"
+             wx:for="{{task2}}"
+             wx:key="{{index}}"
+             price="{{item.task_moneny}}"
+             desc="手机号码:{{item.signer_mobile}}" 
+             title="任务:{{item.task_type}}"/>
+</template>

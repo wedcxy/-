@@ -1,0 +1,28 @@
+<view class="box">
+      <van-search value="{{ value }}" placeholder="请输入搜索关键词" use-action-slot show-action   bind:change="onCancel">
+              <view slot="action"  bind:tap="onSearch">搜索</view>
+      </van-search>
+      <view class="butbox">
+            <van-button round type="info" bind:click="click">发布任务</van-button>
+      </view>
+      <view class="butbox">
+            <van-button round type="info" bind:click="runner">跑手页面</van-button>
+      </view> 
+</view> 
+<scroll-view scroll-y="true" bindscrolltolower="bottom">
+                          <van-card 
+                          class="van-vard" 
+                          thumb="http://49.235.182.60/media/task.png"
+                          price="{{item.task_moneny}}"
+                          data-price="{{item.task_moneny}}"
+                          desc="手机号码:{{item.signer_mobile}}" 
+                          data-desc="{{item.signer_mobile}}"
+                          title="任务：{{item.task_type}}"
+                          data-title="{{item.task_type}}"
+                          wx:for="{{task}}" 
+                          data-id="{{item.id}}" 
+                          data-signer_mobile="{{item.signer_mobile}}"
+                          data-address="{{item.address}}"
+                          bindtap="clickTask"/>
+</scroll-view>
+  

@@ -1,0 +1,28 @@
+
+<form bindsubmit="menu" class="task">
+        <text>发布任务</text>
+        <view class="task-box">
+              <view>
+                    <picker mode="selector" value="{{index}}" range="{{task}}" bindchange="clickTask" name="task_type">
+                            <view>任务类型：{{task[index]}}</view>
+                    </picker>
+              </view> 
+              <view>
+                    <picker mode="selector" value="{{index2}}" range="{{task2}}" bindchange="clickTask2" name="task_moneny">
+                            <view>任务赏金：{{task2[index2]}}</view>
+                    </picker>
+              </view> 
+              <view>
+                    <view bindtap="request">点击文本获取地址</view>
+                    <input name="address" type="text" value="{{site}}" placeholder="[可选]详细地址:" class="add"></input>
+              </view> 
+              <view>
+                    <view>
+                          <input type="text"  placeholder="手机号码:" class="number" name="signer_mobile" bindinput="phone"></input>
+                    </view> 
+              </view> 
+              <view>
+                    <button size="default" type="primary" form-type="submit">发布</button>
+              </view> 
+        </view>
+</form>

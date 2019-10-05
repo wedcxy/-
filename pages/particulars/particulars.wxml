@@ -1,0 +1,9 @@
+<view class="commodity">
+      <image src="{{commodity.goods_front_image}}"></image>
+       <van-cell-group>
+                  <van-field value="{{commodity.name}}" label="商品名称：" left-icon="contact" disabled  border="{{ false }}"/>
+                  <van-field value="{{commodity.goods_price}}" label="商品单价：" left-icon="gold-coin-o" disabled  border="{{ false }}"/>
+                  <van-stepper value="{{ 1 }}" bind:change="onChange" />
+                  <van-submit-bar price="{{b}}"  button-text="提交订单"  bind:submit="onSubmit" label=" "/>
+      </van-cell-group>
+</view>

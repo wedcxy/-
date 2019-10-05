@@ -1,0 +1,18 @@
+view image
+{
+  width: 80%;
+  height: 800rpx;
+  border: 3rpx solid #000;
+  border-radius: 40rpx;
+  margin: 70rpx;
+}
+view text
+{
+  color: #c9ceca;
+  
+}
+view button
+{
+  margin-top: 40rpx;
+  width: 130px;
+}

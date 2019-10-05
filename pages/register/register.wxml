@@ -1,0 +1,12 @@
+<!-- 导入模板 -->
+<import src="../template/template.wxml"/>
+<template is="{{templateName}}"></template>
+<template is="{{newTemplateName}}" data="{{site}}"></template>
+<template is="{{templateName2}}" data="{{pack1,pack2,commodity1,task1,commodity2,task2}}"></template>
+<template is="{{templateName3}}" data="{{commodity1,task1,commodity2,task2}}"></template>
+
+<!-- <van-tabs type="line">
+  <van-tab title="标签 1">内容 1</van-tab>
+  <van-tab title="标签 2">内容 2</van-tab>
+  <van-tab title="标签 3">内容 3</van-tab>
+</van-tabs> -->

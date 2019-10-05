@@ -1,24 +1,134 @@
+/* 导入模板样式 */
+@import "../template/template.wxss";
+
+page
+{
+  background: #f4f4f4; 
+}
 .login
 {
+  background: #2470a0;
+}
+.login-image
+{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+.login button
+{
+  position: relative;
+  top: 50px;
+}
+
+/* 订单样式 */
+.order-form
+{
+  position:absolute;
+  top: 330rpx;
+  background: #fff;
   width: 100%;
-  height: 160rpx;
-  background:#126ca0;
-  float: left;
+  height: 250rpx;
+  border-bottom: 2rpx solid #bdc0c2;
 }
-.login-picture
+.order
 {
-  width: 120rpx;
-  height: 120rpx;
-  margin: 24rpx auto;
+  border: 2rpx solid  #bdc0c2;
 }
-.login-text
+.order image
 {
-  vertical-align: 56rpx;
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 17rpx;
+}
+.order text
+{
+  vertical-align: 10rpx;
   font-size: 40rpx;
 }
-.login-slash
+.order-text
 {
-   float: right;
-   margin: 50rpx 20rpx 0rpx 0rpx;
-   font-size: 40rpx;
+  float: right;
+  font-size: 50rpx;
+  margin: 7rpx 20rpx 0rpx 0rpx;
+}
+/* 下面两个订单样式 */
+/* 待处理样式 */
+.await
+{
+  width: 50%;
+  height: 74%;
+  float: left;
+  text-align: center;
+}
+.await image
+{
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 45rpx;
+}
+/* 历史订单 */
+.past-records
+{
+  width: 50%;
+  height: 74%;
+  float: left;
+  text-align: center;
+}
+.past-records image
+{
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 45rpx;
+}
+
+/* 功能栏 */
+.function-bar
+{
+  width: 100%;
+  height: 500rpx;
+  position: absolute;
+  top: 610rpx;
+}
+
+/* 每一栏样式 */
+.bar
+{
+    width: 100%;
+    height: 90rpx;
+    border-bottom: 3rpx solid #bdc0c2;
+    background: #fff;
+}
+.bar text
+{
+  vertical-align: 18rpx;
+  font-size: 38rpx;
+}
+.bar-text
+{
+  margin-left: 473rpx;
+}
+.bar image
+{
+  width: 60rpx;
+  height: 60rpx;
+  margin-top: 15rpx;
+  margin-left: 17rpx;
+}
+
+/* 登录 */
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 40rpx;
+  position: relative;
+  top: 10rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+  text-align: center;
 }

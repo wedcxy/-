@@ -1,4 +1,5 @@
 // pages/index2/index2.js
+// const app = getApp()
 Page({
 
   /**
@@ -12,55 +13,30 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  
+  // 页面按钮触发页面跳转事件
+  skip1: function () {
+    wx.navigateTo({
+      url: '../errand/errand',//这里路径可以传递参数，然后跳转页面就可以在onLoad(options)里面获取数                               据，但是在这里传递数据必须以：key=value的方式写在url里面，然后在另外文                                件获取形式：参数.key来获取传递的数据
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  skip2: function () {
+    wx.navigateTo({
+      url: '../partTime/partTime',
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  skip3:function()
+  {
+    wx.navigateTo({
+      url: '../register/register?id=register',
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  skip4: function () {
+    wx.navigateTo({
+      url: '../register/register?id=opinion',
+    })
   }
 })

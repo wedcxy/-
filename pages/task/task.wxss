@@ -1,0 +1,29 @@
+/* pages/task/task.wxss */
+page
+{
+  background: #f4f4f4; 
+}
+.taskBox
+{
+  background: #fff;
+  border: 2rpx solid #000;
+  border-radius: 50rpx;
+  height: 900rpx;
+  margin: 180rpx 5rpx 0 5rpx;
+}
+.titleBox
+{
+  text-align: center;
+  font-size: 40rpx;
+  margin-top: 30rpx;
+  border-bottom: 2rpx solid #000;
+}
+van-cell-group van-field
+{
+  margin-bottom:30rpx;
+}
+.taskBox button
+{
+  width: 35%;
+  margin-top: 168rpx;
+}

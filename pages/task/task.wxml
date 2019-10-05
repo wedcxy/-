@@ -1,0 +1,14 @@
+<view class="taskBox">
+      <view class="titleBox">
+            <text class="title">订单详情</text>
+      </view>
+      <view>
+            <van-cell-group>
+                          <van-field value="{{task.title}}" label="任务类型：" left-icon="contact" disabled  border="{{ false }}"/>
+                          <van-field value="{{task.price}}" label="任务赏金：" left-icon="gold-coin-o" disabled  border="{{ false }}"/>
+                          <van-field value="{{task.address}}" label="任务地址：" left-icon="location-o" disabled  border="{{ false }}"/>
+                          <van-field value="{{task.signer_mobile}}" label="联系号码：" left-icon="phone-o" disabled  border="{{ false }}"/>
+            </van-cell-group>
+            <button type="primary" bindtap="clickTask">接受任务</button>
+      </view> 
+</view>

@@ -1,0 +1,38 @@
+page
+{
+  background: #f0f3f6;
+}
+.box
+{
+  background: #fff;
+  border-bottom: 2rpx solid #000;
+  padding-bottom: 10rpx;
+  margin-bottom: 20rpx;
+}
+van-search
+{
+  height: 40rpx;
+  border-radius: 40rpx;
+}
+van-button
+{
+  width: 5%;
+  margin: 0 13% 0 13%;
+}
+.butbox
+{
+  width: 50%;
+  display: inline-block;
+  text-align: center;
+  background: #fff;
+}
+van-card
+{
+  background: #fff;
+  margin-bottom: 4rpx;
+}
+scroll-view
+{
+  position: fixed;
+  height: 1370rpx;
+}

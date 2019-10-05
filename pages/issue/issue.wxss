@@ -1,0 +1,55 @@
+/* 发布模板样式 */
+.task
+{
+  width: 100%;
+  height: 100%;
+  background: yellow;
+}
+.task text
+{
+  text-align: center;
+  display: block;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #045497;
+  border: 2rpx solid #7e7e7e;
+  font-size: 40rpx;
+  color: #fff;
+}
+.task-box
+{
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: 25rpx;
+  border: 2rpx solid #e9eded;
+  border-radius: 20rpx;
+}
+.task-box view
+{
+  width: 100%;
+  height: 150rpx;
+  /* background:#e2e4e6;
+  border-bottom: 2rpx solid #7e7e7e; */
+  line-height: 150rpx;
+}
+.task-box view .add
+{
+  width: 90%;
+  border: 3rpx solid #e3dfe3;
+}
+.task-box view .number
+{
+  position: absolute;
+  bottom: 128rpx;
+  width: 90%;
+  border: 3rpx solid #e3dfe3;
+}
+.task-box button
+{
+  width: 317rpx;
+  position: absolute;
+  bottom: 4rpx;
+  left: 206rpx;
+}

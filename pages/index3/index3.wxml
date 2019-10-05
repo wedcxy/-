@@ -1,8 +1,36 @@
-<!-- 登录部分 -->
-<view class="login">
-      <image src="../img/login.png" class="login-picture"></image>
-      <text class="login-text">登录</text>
-      <text class="login-slash">></text>
+
+<view class="login" bindtap="login">
+        <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" type="primary"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+</view>
+ 
+<!-- 订单  -->
+<view class="order-form">
+       <view class="order" bindtap="order">
+              <image src="http://49.235.182.60/media/order-form.png"></image>
+              <text>订单</text>
+              <text class="order-text">></text>
+       </view>
+       <!-- 待处理 -->
+       <view class="await" bindtap="await">
+              <image src="http://49.235.182.60/media/order-form2.png"></image>
+              <view>待处理</view>
+       </view>
+      <!-- 全部订单 -->
+       <view class="past-records" bindtap="pastRecords">
+              <image src="http://49.235.182.60/media/order-form3.png"></image>
+              <view>全部订单</view>
+       </view>
 </view>
 
- 
+<!-- 功能 -->
+<view class="function-bar">
+      <view wx:for="{{fun}}" class="bar" wx:key="*this" bindtap="readArticle" data-id="{{item.id}}">
+            <image src="{{item.src}}"></image>
+            <text>{{item.text}}</text>
+            <text class="bar-text">></text>
+      </view>
+</view>

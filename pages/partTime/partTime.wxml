@@ -1,0 +1,14 @@
+<van-tabs active="{{ active }}" bind:change="onChange">
+        <van-tab title="全部内容">
+                   <van-card num="1" price="{{item.money}}" desc="手机：{{item.moblie}}" title="校园兼职"thumb="http://49.235.182.60/media/jianzhi.png" wx:for="{{parttime}}" wx:key="{{index}}"/>
+        </van-tab>
+            <van-tab title="发布任务">
+                      <i-panel title="基础用法">
+                                  <i-input data-name="name" value="{{ name }}" title="发布人" autofocus placeholder="名字" maxlength="5" bind:change="on"/>
+                                  <i-input data-name="phone" value="{{ phone }}" type="number" title="联系电话" placeholder="请输入手机号" maxlength="11"  bind:change="on"/>
+                                  <i-input data-name="message" value="{{ message }}" type="textarea" title="描述信息" placeholder="输入您的要求" maxlength="50"bind:change="on" />
+                                  <i-input data-name="price" value="{{ price }}" type="number" title="兼职金额" placeholder="输入金额" maxlength="6" bind:change="on"/>
+                      </i-panel>  
+                      <van-submit-bar button-text="提交任务" bind:submit="onSubmit" />
+             </van-tab>
+</van-tabs>
